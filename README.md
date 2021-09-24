@@ -60,7 +60,7 @@ For training the network, run the command below,
 ## Evaluating the network
 Run the following command,
 
-```python run_fusion_model.py -ts subject01 -ss 1024 -sssk 200 -srsk 20 -ft focus_concat -dd ../../prepare/deephand_embeddings/ -tm saves/focus_concat_subject01_I2048_288_H1024_200_L2_2```
+```python run_fusion_model.py -ts subject01 -ss 1024 -sssk 200 -srsk 20 -ft focus_concat -dd deephand_embeddings/ -tm saves/focus_concat_subject01_I2048_288_H1024_200_L2_2```
 
 #### Option description:
 * -tm: full path to a trained model
