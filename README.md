@@ -64,3 +64,9 @@ Run the following command,
 
 #### Option description:
 * -tm: full path to a trained model
+
+## Results
+
+Here is the results we published in the paper,
+
+<img src="repo_images/results.JPG" width="800" height="200" />
