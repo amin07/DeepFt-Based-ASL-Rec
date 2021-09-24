@@ -1,0 +1,13 @@
+
+
+sbatch --output "$slurm_loc"/${sub_name}_${fusion_type}.out --error "$slurm_loc"/${sub_name}_{fusion_type}.err  --export=ts=${sub_name},ft=${fusion_type} run_job.sh
+
+
+
+sbatch --job_name ${sub_name}_c${cid}_job --output "$slurm_loc"/${sub_name}_c${cid}.out --error "$slurm_loc"/${sub_name}_c${cid}.err  --export=ci=${cid},ts=${sub_name},file_name=${sub_name}_conf_model.py conf_job.sh
+
+sbatch --output "$slurm_loc"/${sub_name}_c${cid}.out --error "$slurm_loc"/${sub_name}_c${cid}.err  --export=ci=${cid},ts=${sub_name},file_name=${sub_name}_conf_model.py conf_job.sh
+
+##for test use this
+
+sbatch --output "$slurm_loc"/${sub_name}_test.out --error "$slurm_loc"/${sub_name}_test.err  --export=ts=${sub_name},file_name=rgb_3dcnn.py,rm=test,mn=alamin_T15_state30_ run_job.sh
